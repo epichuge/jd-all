@@ -967,7 +967,7 @@ async function joinLeaderTuan() {
     console.log(`\n参加作者的团`);
     for (let tuanId of $.authorTuanIds) {
       if (!tuanId) continue
-      await JoinTuan(tuanId);
+      //await JoinTuan(tuanId);
     }
   }
 }
@@ -989,6 +989,7 @@ function QueryActiveConfig() {
               const { userTuanInfo } = data['data'];
               console.log(`\n团活动ID  ${userTuanInfo.activeId}`);
               console.log(`团ID  ${userTuanInfo.tuanId}\n`);
+              await JoinTuan("CQ4nLJneNRikSCwYepgGeA==");
             } else {
               console.log(`QueryActiveConfig异常：${JSON.stringify(data)}`);
             }
