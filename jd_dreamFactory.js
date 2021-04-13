@@ -1119,7 +1119,7 @@ function QueryAllTuan() {
                     if (item2.encryptPin === $.encryptPin) {
                       if (item2.receiveElectric && item2.receiveElectric > 0) {
                         console.log(`${new Date(item2.joinTime * 1000).toLocaleString()}参加团主【${item2.nickName}】的奖励已经领取成功`);
-                        console.log(`${new Date(item2.joinTime * 1000).toLocaleString()}参加团主【console.log(`${JSON.stringify(item2)}`)】的奖励已经领取成功`)
+                        console.log(`${JSON.stringify(item2)}`)
                       } else {
                         console.log(`开始领取${new Date(item2.joinTime * 1000).toLocaleString()}参加团主【${item2.nickName}】的奖励`)
                         await tuanAward(item.tuanActiveId, item.tuanId, item.tuanLeader === $.encryptPin);//isTuanLeader
