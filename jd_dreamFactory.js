@@ -972,7 +972,7 @@ async function joinLeaderTuan() {
       if (!tuanId) continue
       if (!$.canHelp) break;
       console.log(`\n账号${$.UserName} 参加作者lxk0301的团 【${tuanId}】`);
-      await JoinTuan(tuanId);
+      await JoinTuan("1Fnh6oNnq17CyoGd3lmAUQ==");
       await $.wait(1000);
     }
   }
